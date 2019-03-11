@@ -34,7 +34,6 @@ body, html{
   height: 95vh;
 }
 .sign-up-form{
-
   position: fixed;
   top: 0;
   left: 0;
@@ -67,15 +66,10 @@ body, html{
   align-items: center;
   color: #4F799E;
 }
-.names{
-  display: inline-block;
-}
 .sign-up-form label{
   width: 92%;
   margin-left: 4%;
-
 }
-
 .sign-up-form input{
   border-radius: 2px;
   border: 1px solid #ccc;
@@ -86,7 +80,21 @@ body, html{
 }
 .sign-up-form .select2 {
   margin: 0 0 2% 4%;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  background: #F2F2F2;
+  font-size: 1.1em;
+  margin-bottom: 4%;
 }
+ .select2-selection--multiple{
+   border-radius: 2px !important;
+   border: 1px solid #ccc !important;
+   border: none !important;
+   background: none !important;
+   min-height: 25px !important;
+   height: 25px !important;
+
+ }
 option{
   font-size: 1.1em;
 }
@@ -144,7 +152,12 @@ option{
   float: left;
 }
 #info-icon{
-  max-width: 20px;
+  max-width: 15px;
+  margin-right: 6%;
   float: right;
+
+}
+#info-icon:hover{
+  filter: drop-shadow(2px 2px 2px gray);
   cursor: pointer;
 }
