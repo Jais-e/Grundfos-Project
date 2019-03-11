@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <title>Grundfos Project</title>
+</head>
+
+<body style="overflow-y:hidden">
+  <div class="wrapper">
+    <header><img src="images/login-header.jpg" alt="header" class="header-img"></header>
+    <main class="sign-up-page">
+      <section class="sign-up-form">
+
+        <form id="sign-up">
+          <fieldset>
+            <legend class="register-header">Grundfos - Create account</legend>
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="first-name" name="firstName" required>
+            <br><br>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="last-name" name="lastName" required>
+            <br><br>
+            <label for="mail">Mail:</label>
+            <input type="email" id="mail" name="mail">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="mail" name="password">
+            <br><br>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+            <br><br>
+            <p class="explanation">Just like we optimize water flow, we want to optimize your information flow. <br>By filling in all fields in this form, you can help us provide a smooth and efficient service.</p>
+            <button id="next-page" type="button" name="next-page">Next</button>
+            <p class="small-note">Already a member? Login <a href="#">here</a></p>
+          </fieldset>
+        </form>
+
+
+        <form id="sign-up-p2">
+          <fieldset>
+            <legend class="register-header">Grundfos - Create account</legend>
+            <label for="firstName">Job role - <span class="bonus-info">(multiple choices allowed)</span>:</label><br>
+            <select class="basic-multiple" id="job-role" style="width: 92%" name="jobRole" multiple="multiple">
+              <option value="installer">Installer</option>
+              <option value="facilityManager">Facility Manager</option>
+              <option value="consultingEngineer">Consulting Engineer</option>
+              <option value="distributor">Distributor</option>
+              <option value="serviceProvider">Service Provider</option>
+              <option value="operationManager">Operation Manager</option>
+              <option value="systemBuilder">System Builder</option>
+              <option value="homeowner">Homeowner</option>
+              <option value="contractor">Contractor</option>
+              <option value="technicalDirector">Technical Director</option>
+              <option value="other">Other</option>
+            </select>
+
+
+
+            <label for="interests">Areas of interests - <span class="bonus-info">(multiple choices allowed)</span>:</label><br>
+            <select class="basic-multiple" id="interests" style="width: 92%" name="interests" multiple="multiple">
+              <option value="familyHomes">Family homes</option>
+              <option value="commercialBuliding">Commercial building</option>
+              <option value="industrialProcesses">Industrial processes</option>
+              <option value="industrialUtilities">Industrial utilities</option>
+              <option value="waterSupply">Water supply</option>
+              <option value="wastewater">Wastewater</option>
+            </select>
+            <br><br>
+<p class="legal-info"><input type="checkbox">Yes, I want to receive personalised information about news, tools, products, applications, events and promotions from Grundfos Holding A/S, Denmark, and your local Grundfos company (together “Grundfos”) and I agree to be contacted by e-mail, SMS, phone, push notifications or letter for such purposes. In order to provide me with personalised information, Grundfos will analyse my behaviour and create a profile based on my usage of the different Grundfos websites, applications or tools. I consent to the processing of my personal data I have provided above as well as the creation and use of my profile for such purposes. <img id="info-icon" src="images/info -con.png" alt="info"><br><br>
+You may withdraw your consent at any time. Such withdrawal will not affect the lawfulness of the processing prior to the consent withdrawal. You also have the right to object to a use of your personal data for direct marketing purposes including profiling. For more information regarding your personal data and your rights, please see our  Terms & Conditions and  Privacy Policy</p>
+            <button id="create-account" type="button" name="create-account" onclick="createAccount()">Sign up</button>
+            <p class="small-note">Already a member? Login <a href="#">here</a></p>
+          </fieldset>
+        </form>
+      </section>
+      <section class="users"></section>
+    </main>
+    <footer>
+      <script src="js/script.js"></script>
+
+    </footer>
+  </div>
+</body>
+
+</html>
