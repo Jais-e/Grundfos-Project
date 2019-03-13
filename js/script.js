@@ -24,6 +24,8 @@ document.querySelector('#next-page').addEventListener("click", function() {
   let req2 = document.querySelector('#last-name').value;
   let req3 = document.querySelector('#password').value;
   let req4 = document.querySelector('#mail').value;
+
+
   if (req1 === "" || req2 === "" || req3 === "" || req4 === "") {
     alert('Please fill in all requried fields');
   } else {
@@ -59,6 +61,9 @@ document.querySelector('#eye2').addEventListener('click', function() {
 // To be enabled at a late stage //
 let users = [];
 function createAccount() {
+
+  let consent = document.getElementById("consent").checked;
+  if (consent == true){
   // get the values from the input fields
   let firstName = document.querySelector('#sign-up input[name=firstName]').value;
   console.log(firstName);
@@ -85,7 +90,9 @@ function createAccount() {
   };
   users.push(newAccount);
   console.log(users);
-
+}else{
+  alert('Please give your consent to legal conditions');
+}
 
 }
 
