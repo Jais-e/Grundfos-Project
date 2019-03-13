@@ -34,10 +34,10 @@
             <input class="requried" type="text" id="last-name" name="lastName" required>
             <br><br>
             <label for="mail">Mail:<span class="bonus-info">(required)</span></label>
-            <input class="requried" type="email" id="mail" name="mail" required>
+            <input class="requried" type="email" id="mail" name="mail" required >
             <br><br>
             <label for="password">Password: <span class="bonus-info">(required)</span></label>
-            <input class="requried" type="password" id="password" name="password" required>
+            <input class="requried" type="password" id="password" name="password">
             <img id="eye" src="images/eye.png" />
             <img id="eye2" src="images/eye2.png" />
             <br><br>
@@ -45,7 +45,7 @@
             <input type="text" id="company" name="company">
             <br><br>
             <label for="countires">Country:</label>
-            <select class="country-select" id="countries" style="width: 92%" name="countries">
+            <select class="country-select" id="countries" name="countries">
               <option value=""></option>
               <option value="AF">Afghanistan</option>
               <option value="AX">Åland Islands</option>
@@ -298,7 +298,7 @@
               <option value="ZW">Zimbabwe</option>
             </select>
             <button id="next-page" type="button" name="next-page">Next</button>
-            <p class="small-note">Already a member? Login <a href="#">here</a></p>
+            <p class="small-note">Already have an account? Login <a href="#">here</a></p>
           </fieldset>
         </form>
 
@@ -306,7 +306,7 @@
         <form id="sign-up-p2">
           <fieldset>
             <legend class="register-header">Create account</legend>
-            <label for="firstName">Job role - <span class="bonus-info">(multiple choices allowed)</span>:</label><br>
+            <label for="jobRole">Job role - <span class="bonus-info">(multiple choices allowed)</span>:</label><br>
             <select class="basic-multiple" id="job-role" style="width: 92%" name="jobRole" multiple="multiple">
               <option value="installer">Installer</option>
               <option value="facilityManager">Facility Manager</option>
@@ -320,9 +320,6 @@
               <option value="technicalDirector">Technical Director</option>
               <option value="other">Other</option>
             </select>
-
-
-
             <label for="interests">Areas of interests - <span class="bonus-info">(multiple choices allowed)</span>:</label><br>
             <select class="basic-multiple" id="interests" style="width: 92%" name="interests" multiple="multiple">
               <option value="familyHomes">Family homes</option>
@@ -333,19 +330,69 @@
               <option value="wastewater">Wastewater</option>
             </select>
             <br><br>
-            <p class="legal-info"><input id="consent" type="checkbox">Yes, I want to receive personalised information about news, tools, products, applications, events and promotions from Grundfos Holding A/S, Denmark, and your local Grundfos company (together
+            <p class="legal-info"><input id="consent" type="checkbox">Yes, I want to receive personalised information about news, tools, products, applications, events and promotions from Grundfos Holding A/S, Denmark, and your local Grundfos
+              company (together
               “Grundfos”) and I agree to be contacted by e-mail, SMS, phone, push notifications or letter for such purposes. In order to provide me with personalised information, Grundfos will analyse my behaviour and create a profile based on my
-              usage of the different Grundfos websites, applications or tools. I consent to the processing of my personal data I have provided above as well as the creation and use of my profile for such purposes. <img id="info-icon" src="images/info -con.png"
+              usage of the different Grundfos websites, applications or tools. I consent to the processing of my personal data I have provided above as well as the creation and use of my profile for such purposes. <img id="info-icon" src="images/info-icon.png"
                 alt="info"><br><br><br><br>
               You may withdraw your consent at any time. Such withdrawal will not affect the lawfulness of the processing prior to the consent withdrawal. You also have the right to object to a use of your personal data for direct marketing purposes
               including profiling. For more information regarding your personal data and your rights, please see our Terms & Conditions and Privacy Policy</p>
             <button id="back" type="button" name="back-btn">Back</button>
             <button id="create-account" type="button" name="create-account" onclick="createAccount()">Sign up</button>
-            <p class="small-note">Already a member? Login <a href="#">here</a></p>
+            <p class="small-note">Already a have an account? Login <a href="#">here</a></p>
           </fieldset>
         </form>
       </section>
-      <section class="users"></section>
+
+      <section class="permission">
+        <legend>Marketing permission</legend>
+        <p>
+          Privacy Notice regarding Grundfos’ marketing services
+          What personal data is collected, for what purpose(s) and on what legal premise?
+          Grundfos will collect the personal data provided by you when signing up for Grundfos marketing services, this can include your first and last name, your email address, your telephone number, your country, your company, related company information, your area of interest and your job role (hereinafter the “Personal Data”).
+          Grundfos will use the Personal Data for the purposes of delivering the requested marketing services to you and to provide you with a personalised experience, information and marketing messages relevant to you via email, SMS, phone, push notifications or letter relating to Grundfos news, tools, applications, products events and promotions.
+          In order for Grundfos to fulfil the above-mentioned activities, Grundfos will store your Personal Data, analyse your behaviour and create a profile based on your actions on the different Grundfos websites, applications or tools, you have access to, including where you have created a Grundfos Account or filled in a form.<br><br>
+          To analyse your behaviour Grundfos is using an Adobe Experience Cloud Visitor ID to identify visitors and their interests on the Grundfos websites via cookies. Please, read our cookie policy for more information on Grundfos’ usage of cookies. Additionally, if you have a Grundfos Account, you will get a Public User ID that will be picked up and saved, for each page you have viewed, when you are logged in. Your Adobe Experience Cloud ID or your Public User ID is combined with your email address and from these ID’s Grundfos may utilise additional customer attributes to streamline marketing information that is more relevant to you.<br><br>
+          The legal basis for the processing of your Personal Data for newsletter mailings is your consent (Article 6, para. 1, lit. a of the General Data Protection Regulation (Regulation (EU) 2016/679) (“GDPR”).<br><br>
+          Your Personal Data may only be processed for different purposes if this is needed to comply with legal or regulatory obligations (e.g. relating to court proceedings or criminal prosecution authorities), where you have consented to the respective processing or if the processing is otherwise lawful under applicable law. If processing is for any different purpose we may provide you with additional information.
+          You are not obliged to provide your consent to receive marketing services and therefore the related processing of your personal data. If you do not provide your consent, you will not be able to access any such services.<br><br>
+          Details relating to the data controller and recipients of the personal data <br><br>Grundfos Holding A/S, Poul Due Jensens Vej 7, 8850 Bjerringbro, Denmark and Grundfos Pumps Ltd., Grovebury Road, Leighton Buzzard, Beds LU7 4TL, UK (together “Grundfos”) are joint data controllers of your Personal Data and responsible for data security and the processing of the data according to the specific purposes as previously mentioned.
+          Grundfos can share your Personal Data with third party parties who will act as Grundfos’ data processors for processing your Personal Data according to the purposes mentioned above. The following data processors are used:
+          - Adobe Systems Software Ireland Limited 4-6 Riverwalk, City West Business Campus, Dublin 24, Ireland: System used by Grundfos for storage of all your profile data and for personalising and sending out marketing material.
+          - Microsoft Ireland Operations Limited, Atrium Building Block B Carmenhall Road Sandyford Industrial Estate Dublin 18, Ireland: System used by Grundfos for analysing your behaviour (big data analysis).
+          - Other local companies within the Grundfos Group that assist with IT support for the above systems.
+          - Other recipients, typically consultants, that will assist with IT support for the above systems and assist with the processing of your Personal Data on behalf of Grundfos in the above systems.
+          - Other authorised third parties may need access or store personal data if required or permitted by applicable law (e.g. government authorities, courts, external advisors, and similar third parties that are public bodies).<br><br>
+          Retention period<br><br>
+          Data collected for the purposes stated above will be stored only as long as is necessary to meet the demands mentioned above, and once you have not withdrawn your marketing consent. This means that if you withdraw your consent, Grundfos
+          will, as soon as possible, remove the link directly to your profile identity in the marketing system and will only keep your system ID to make sure that we will not contact you again with our marketing services.
+          Be aware that where you have given your consent for additional marketing services by signing up for one or more of Grundfos’ other services, i.e. created a Grundfos Account or signed up for Grundfos for Installers, Grundfos will continue
+          to process your Personal Data for these other purposes. If you wish for Grundfos to completely stop processing your Personal Data, please follow the instructions given in the privacy notices for each relevant service.
+          If a judicial or disciplinary action is initiated, the Personal Data may be stored until the end of any such action, including any potential period(s) of appeal. It will then be deleted or archived.
+          Your Personal Data will not be kept in a form that will allow you to be identified for any longer than is reasonably considered necessary by Grundfos for achieving the purposes for which it was collected or processed or as is recommended
+          in the applicable laws related to data retention periods.<br><br>
+          Your Rights<br><br>
+          If you have consented to participate in any personal data processing activities, you may withdraw this consent at any time. Such a request will not affect the legality of any activity undertaken prior to any consent withdrawal.
+          Right of access: You may have the right to obtain from us confirmation as to whether or not personal data concerning you is processed, and, where that is the case, to request access to that personal data. The access information includes –
+          amongst other things – the remit of the processing, the categories of personal data concerned, and the recipients or categories of recipients to whom the personal data has been or will be disclosed to. However, this is not an absolute
+          right and the interests of other individuals may restrict your right of access.
+          You may have the right to obtain a copy of the personal data undergoing processing. For further copies requested by you, we may charge a reasonable fee based on administrative costs.
+          Right to rectification: You may have the right to request us to rectify any inaccurate personal data concerning you. Depending on the purposes of the processing, you may have the right to have incomplete personal data completed, including
+          by means of providing a supplementary statement.
+          Right to erasure ("right to be forgotten"): Under certain circumstances, you may have the right to obtain from us the deletion of personal data concerning you and we may be obliged to erase such personal data.
+          Right to restriction of processing: Under certain circumstances, you may have the right to obtain from us, restrictions regarding the processing of your personal data. Where this is the case, the respective data will be indicated and may
+          only be processed by us for certain agreed purposes.
+          Right to object: Under certain circumstances, you may have the right to object, on grounds that relate to your individual situation. Or, in the instance where personal data is processed for direct marketing purposes, at any time. In such
+          circumstances, we will no longer process your personal data.
+          Right to data portability: Under certain circumstances, you may have the right to receive the personal data concerning you, which you have provided to us, in a structured, commonly used and machine-readable format and you may have the
+          right to transmit this data to a 3rd party without hindrance from us.
+          If you would like to know more or wish to initiate one or more of your above rights, you are welcome to contact Grundfos Holding A/S by sending an email to enews@grundfos.com
+          In case of a complaint, you have the right to lodge any specific complaint with the competent supervisory authority who oversee the processing of your Personal Data.<br><br>
+          Changes to the Privacy Notice<br><br>
+          We reserve the right to change or supplement this Privacy Notice at any time. In any instance where the changes to the Privacy Notice are regarded as material and significant, you will be directly informed, for example via email.</p>
+      </section>
+
+      <section class="account-view"></section>
     </main>
     <footer>
       <script src="js/script.js"></script>

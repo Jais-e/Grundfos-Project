@@ -99,6 +99,7 @@ input{
 }
 .country-select{
   height: 30px;
+  width: 93%;
 }
 option {
   font-size: 1.1em;
@@ -113,8 +114,9 @@ option {
   width: 30px;
   height: auto;
   float: left;
-  margin-left: 2%;
+  margin: 3px 0 0 2%;
   cursor: pointer;
+  transform: rotate(-5deg);
 }
 #eye2 {
   display: none;
@@ -175,9 +177,13 @@ option {
   filter: drop-shadow(2px 2px 2px gray);
   cursor: pointer;
 }
-
+/* Legal pop-up when clicking on info icon !! UNFINISHED !! */
+.permission{
+  display: none;
+}
 /* Styles for jquery library Select2 */
 .sign-up-form .select2 {
+
   margin: 0 0 2% 4%;
   border-radius: 2px;
   border: 1px solid #ccc;
@@ -185,6 +191,7 @@ option {
   font-size: 1.1em;
   margin-bottom: 4%;
 }
+/* Override Select2 input field styles */
 .select2-selection--multiple {
   border-radius: 2px !important;
   border: 1px solid #ccc !important;

@@ -3,10 +3,22 @@
 $(document).ready(function() {
   $('.basic-multiple').select2();
 });
-
+let progresCounter = 0;
 // Javasript
 
-document.querySelector('#sign-up').onchange = function(){
+function progress(){
+  let element1 = document.querySelector('#first-name').value;
+  let element2 = document.querySelector('#last-name').value;
+  let element3 = document.querySelector('#password').value;
+  let element4 = document.querySelector('#mail').value;
+    if (element1 != "" || element2 != ""){
+      progresCounter ++;
+      console.log(progresCounter);
+    }
+
+};
+progress()
+document.querySelector('#sign-up').oninput = function(){
   let req1 = document.querySelector('#first-name').value;
   let req2 = document.querySelector('#last-name').value;
   let req3 = document.querySelector('#password').value;
@@ -58,11 +70,12 @@ document.querySelector('#eye2').addEventListener('click', function() {
 });
 
 
-// To be enabled at a late stage //
+// Creat new user account //
 let users = [];
 function createAccount() {
 
   let consent = document.getElementById("consent").checked;
+  // If checbox is checked
   if (consent == true){
   // get the values from the input fields
   let firstName = document.querySelector('#sign-up input[name=firstName]').value;
@@ -71,15 +84,14 @@ function createAccount() {
   console.log(lastName);
   let mail = document.querySelector('#sign-up input[name=mail]').value;
   console.log(mail);
+  let countrySelect = document.querySelector('.country-select');
+  let country = countrySelect.options[countrySelect.selectedIndex].text;
+  console.log(country);
 
-  // Web storage
+  // Web storage !! UNFINISHED !!
   localStorage.setItem("firstName", firstName);
   localStorage.setItem("lastName", lastName);
   localStorage.setItem("email", mail);
-  let countrySelect = document.querySelector('.country-select');
-  let country = countrySelect.option[countrySelect.selectedIndex].text;
-  console.log(country);
-
 
   // create a new object and push to array
   let newAccount = {
@@ -90,7 +102,9 @@ function createAccount() {
   };
   users.push(newAccount);
   console.log(users);
-}else{
+}
+  // If checbox is unchecked
+  else{
   alert('Please give your consent to legal conditions');
 }
 
