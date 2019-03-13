@@ -1,76 +1,95 @@
+
+/* Fonts */
 @font-face {
   font-family: GrundfosFont;
-  src: url('../fonts/GrundfosThesansV2OT-4SL.otf'
-);
+  src: url('../fonts/GrundfosTheSansV2OT-3L.otf');
 }
 @font-face {
   font-family: GrundfosFontHead;
-  src: url('../fonts/GrundfosTheSansV2OT-9BL.otf'
-);
+  src: url('../fonts/GrundfosTheSansV2OT-9BL.otf');
 }
-body, html{
+
+/* General styles */
+body, html {
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   border: none;
   font-family: GrundfosFont;
+  background: url('../images/background-img.jpg') no-repeat;
+  background-size: cover;
 }
-
-.wrapper{
-  width: 80%;
-  margin: 0 auto;
+h2{
+  font-family: GrundfosFontHead;
+  font-size: 2em;
+  color: #4F799E;
 }
-* img{
+* img {
   max-width: 100%;
   margin: 0;
   padding: 0;
 }
 
-
-.sign-up-page{
-  background: url('../images/background-img.jpg') no-repeat;
-  background-size: cover;
+/* Page elements */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.sign-up-page {
   width: 100%;
-  height: 95vh;
+  height: auto;
 }
-.sign-up-form{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  background:  rgba(0, 0, 0, 0.2);
-}
-#sign-up-p2{
-  display: none;
-}
-.register-header{
+.register-header {
   border-top: 3px solid #11497B;
   background: #dedede;
   width: 100%;
   font-family: GrundfosFontHead;
-  height: 40px;margin-bottom: 2%;
+  height: 40px;
+  margin-bottom: 2%;
   text-align: center;
   font-size: 1.2em;
-  padding-top:4%;
+  padding-top: 4%;
   text-transform: uppercase;
   color: #0E3A62;
 }
+.side-text{
+  width: 25%;
+  float: left;
+}
+.explanation {
+  margin: 4% 0;
+  font-family: GrundfosFont;
+  text-align: justify;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  color: #4F799E;
+}
 
-#sign-up, #sign-up-p2{
-  position: relative;
+/* Form styling */
+#sign-up, #sign-up-p2 {
   width: 400px;
-  height: 60%;
-  margin: 10% auto;
+  height: auto;
+  margin: 5% auto;
   background-color: white;
   align-items: center;
   color: #4F799E;
 }
-.sign-up-form label{
+#sign-up-p2 {
+  display: none;
+}
+.bonus-info {
+  font-size: 0.8em;
+  font-style: italic;
+}
+.sign-up-form label {
   width: 92%;
   margin-left: 4%;
 }
-.sign-up-form input{
+input{
+  padding-left: 1%;
+}
+.sign-up-form input, .country-select {
   border-radius: 2px;
   border: 1px solid #ccc;
   background: #F2F2F2;
@@ -78,6 +97,86 @@ body, html{
   width: 92%;
   margin-left: 4%;
 }
+.country-select{
+  height: 30px;
+}
+option {
+  font-size: 1.1em;
+  color: #4F799E;
+}
+#password {
+  width: 80%;
+  float: left;
+  margin-bottom: 4%;
+}
+#eye, #eye2 {
+  width: 30px;
+  height: auto;
+  float: left;
+  margin-left: 2%;
+  cursor: pointer;
+}
+#eye2 {
+  display: none;
+}
+
+/* buttons */
+.sign-up-form button {
+  font-family: GrundfosFont;
+  font-size: 1.2em;
+  border: none;
+  right: 4%;
+  width: 150px;
+  height: 40px;
+  background: grey;
+  bottom: 0;
+  color: white;
+  cursor: pointer;
+  transition: all 500ms;
+}
+#next-page{
+  margin: 40px 0 5px 230px;
+}
+#back, #create-account{
+  margin: 40px 0 5px 35px;
+  background: #0068B4
+}
+
+/* Text beneath buttons */
+.small-note {
+  text-align: right;
+  bottom: 0;
+  right: 4%;
+  margin: 0 15px 2% 0;
+  font-family: GrundfosFont;
+  font-size: 0.8em;
+}
+.small-note a {
+  color: #4F799E;
+}
+
+/* Legal note */
+.legal-info {
+  width: 92%;
+  margin: 2% 0 0 4%;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.legal-info input {
+  width: 4%;
+  float: left;
+}
+#info-icon {
+  max-width: 15px;
+  margin-right: 4%;
+  float: right;
+}
+#info-icon:hover {
+  filter: drop-shadow(2px 2px 2px gray);
+  cursor: pointer;
+}
+
+/* Styles for jquery library Select2 */
 .sign-up-form .select2 {
   margin: 0 0 2% 4%;
   border-radius: 2px;
@@ -86,78 +185,11 @@ body, html{
   font-size: 1.1em;
   margin-bottom: 4%;
 }
- .select2-selection--multiple{
-   border-radius: 2px !important;
-   border: 1px solid #ccc !important;
-   border: none !important;
-   background: none !important;
-   min-height: 25px !important;
-   height: 25px !important;
-
- }
-option{
-  font-size: 1.1em;
-}
-.sign-up-form button{
-  font-family: GrundfosFont;
-  font-size: 1.2em;
-  border: none;
-  position: absolute;
-  right: 4%;
-  margin: 0 0 35px 0;
-  width: 150px;
-  height: 40px;
-  background: #0068B4;
-  bottom: 0;
-  color: white;
-  cursor: pointer;
-}
-.explanation{
-  width: 92%;
-  margin: 0 4%;
-  font-family: GrundfosFont;
-  text-align: justify;
-  padding: 2%;
-  color: #4F799E;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid #dedede;
-  background: #F2F2F2;
-}
-.small-note{
-  position: absolute;
-  text-align: right;
-  bottom: 0;
-  right: 4%;
-  margin: 0 0 2% 0;
-
-  font-family: GrundfosFont;
-  font-size: 0.8em;
-}
-.small-note a{
-  color: #4F799E;
-}
-.bonus-info{
-  font-size: 0.8em;
-  font-style: italic;
-}
-.legal-info{
-  width: 92%;
-  margin: 2% 0 0 4%;
-  font-size: 0.8em;
-  font-style: italic;
-}
-.legal-info input{
-  width: 4%;
-  float: left;
-}
-#info-icon{
-  max-width: 15px;
-  margin-right: 6%;
-  float: right;
-
-}
-#info-icon:hover{
-  filter: drop-shadow(2px 2px 2px gray);
-  cursor: pointer;
+.select2-selection--multiple {
+  border-radius: 2px !important;
+  border: 1px solid #ccc !important;
+  border: none !important;
+  background: none !important;
+  min-height: 20px !important;
+  height: auto !important;
 }
