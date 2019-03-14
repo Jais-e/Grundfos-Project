@@ -247,14 +247,14 @@ option {
 
 #speechBuble {
     position: absolute;
-    margin-left: 770px; 
+    margin-left: 770px;
     margin-top: 90px;
 }
 
 #textButton {
     color: white;
     position:absolute;
-    margin-left: 760px; 
+    margin-left: 760px;
     margin-top: 85px;
 }
 
@@ -287,4 +287,22 @@ option {
 }
 
 
+@media only screen and (max-width: 480px){
+  body{
+    width: 100vw;
+  }
+  .sign-up-page {
+    display: block;
+  }
+  .sign-up-form{
+    width: 100vw;
 
+  }
+  .side-text{
+    display: none;
+  }
+  #sign-up, #sign-up-p2 {
+    width: 100%;
+
+  }
+}
