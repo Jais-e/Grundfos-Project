@@ -239,3 +239,52 @@ option {
   min-height: 20px !important;
   height: auto !important;
 }
+
+#speechBuble img {
+    width: 360px;
+    box-shadow: 2px 2px 10px black;
+}
+
+#speechBuble {
+    position: absolute;
+    margin-left: 770px; 
+    margin-top: 90px;
+}
+
+#textButton {
+    color: white;
+    position:absolute;
+    margin-left: 760px; 
+    margin-top: 85px;
+}
+
+.buttonProfil {
+    background-color: #4aa22c;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 10px;
+}
+
+.textBuble {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.knapPopup{
+    position: absolute;
+    margin-left: 1110px;
+    margin-top: 100px;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+
+
