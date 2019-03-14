@@ -288,21 +288,13 @@ option {
 
 
 @media only screen and (max-width: 480px){
-  body{
-    width: 100vw;
-  }
-  .sign-up-page {
-    display: block;
-  }
-  .sign-up-form{
-    width: 100vw;
 
+  .sign-up-page{
+    display: block;
+    margin-left: -12.5%;
   }
   .side-text{
     display: none;
   }
-  #sign-up, #sign-up-p2 {
-    width: 100%;
 
-  }
 }
