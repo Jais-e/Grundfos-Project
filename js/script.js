@@ -27,7 +27,7 @@ document.querySelector('#sign-up').oninput = function(){
     document.querySelector("#next-page").style.background = "grey";
   } else {
     document.querySelector("#next-page").style.background = "#0068B4";
-
+    document.querySelector(".nudge").style.opacity = "1";
   }
 };
 // Form buttons //
@@ -84,20 +84,32 @@ function createAccount() {
   console.log(lastName);
   let mail = document.querySelector('#sign-up input[name=mail]').value;
   console.log(mail);
+  let company = document.querySelector('#sign-up input[name=company]').value;
+  console.log(company);
   let countrySelect = document.querySelector('.country-select');
   let country = countrySelect.options[countrySelect.selectedIndex].text;
   console.log(country);
+    let jobRole = document.querySelector('#sign-up-p2 > fieldset > span:nth-child(5) > span.selection > span > ul li').title;
+
+  console.log(jobRole);
+  let areaInterest = document.querySelector('#sign-up-p2 > fieldset > span:nth-child(9) > span.selection > span > ul li').title;
+
+  console.log(areaInterest);
 
   // Web storage !! UNFINISHED !!
   localStorage.setItem("firstName", firstName);
   localStorage.setItem("lastName", lastName);
   localStorage.setItem("email", mail);
-
+  localStorage.setItem("company", company);
+  localStorage.setItem("country", country);
+  localStorage.setItem("jobRole", jobRole);
+  localStorage.setItem("areaInterest", areaInterest);
   // create a new object and push to array
   let newAccount = {
     name: firstName,
     initials: lastName,
     mail: mail,
+    company: company,
     country: country,
   };
   users.push(newAccount);
@@ -108,7 +120,7 @@ function createAccount() {
   alert('Please give your consent to legal conditions');
 }
 
-}
+};
 
 
 

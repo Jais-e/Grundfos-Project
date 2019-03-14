@@ -25,12 +25,20 @@ h2{
   font-size: 2em;
   color: #4F799E;
 }
+h3{
+  font-family: GrundfosFontHead;
+  font-size: 1.3em;
+  color: #4F799E;
+}
 * img {
   max-width: 100%;
   margin: 0;
   padding: 0;
 }
+header img{
+  width: 100%;
 
+}
 /* Page elements */
 .wrapper {
   width: 80%;
@@ -54,10 +62,18 @@ h2{
   color: #0E3A62;
 }
 .side-text{
-  width: 25%;
+  width: 30%;
   float: left;
+  color: #4F799E;
 }
-.explanation {
+.bulletpoint{
+  margin: 1% 0;
+  margin-left: 5%;
+  font-size: 1.3em;
+  font-style: italic;
+  list-style:disc;
+}
+.explanation, .nudge {
   margin: 4% 0;
   font-family: GrundfosFont;
   text-align: justify;
@@ -65,7 +81,10 @@ h2{
   line-height: 1.3em;
   color: #4F799E;
 }
-
+.nudge{
+  opacity: 0;
+  transition: all 0.5s;
+}
 /* Form styling */
 #sign-up, #sign-up-p2 {
   width: 400px;
@@ -105,6 +124,7 @@ option {
   font-size: 1.1em;
   color: #4F799E;
 }
+
 #password {
   width: 80%;
   float: left;

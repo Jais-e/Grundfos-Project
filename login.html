@@ -10,41 +10,49 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-  <title>Grundfos Project</title>
+  <title>Grundfos | Sign up</title>
 </head>
 
 <body>
+  <header><img src="images/login-header.jpg" alt="header" class="header-img"></header>
   <div class="wrapper">
-    <header><img src="images/login-header.jpg" alt="header" class="header-img"></header>
+
     <main class="sign-up-page">
       <section class="side-text">
-        <h2>"Just like we optimize water flow, we want to optimize your information flow."</h2>
-        <p class="explanation">By creating an account you get acces to all our online tools that will help you design and estimate your projects.<br><br>By filling in all fields in this form, you will help us provide a smooth and efficient service.
-        </p>
+        <h2>"Just like we optimize water flow, we want to optimize your information flow"</h2>
+        <p class="explanation">By creating an account you get acces to all our online tools that will help you design and estimate your projects.</p>
+          <h3>Examples:</h3>
+          <ul class="bulletpoint">
+            <li>Fast search and dimensioning</li>
+            <li>Quick overview of spareparts</li>
+            <li>Easy calculation of pump efficiency</li>
+            <li>Sharing and administration of project</li>
+          </ul>
+          <p class="nudge">By filling in all fields in this form, you will get more relevant content and help us provide a smooth and efficient service.</p>
       </section>
       <section class="sign-up-form">
 
         <form id="sign-up">
           <fieldset>
             <legend class="register-header">Create account</legend>
-            <label for="firstName">First Name: <span class="bonus-info">(required)</span></label><br>
+            <label for="firstName">First Name:</span></label><br>
             <input class="requried" type="text" id="first-name" name="firstName" required>
             <br><br>
-            <label for="lastName">Last Name: <span class="bonus-info">(required)</span></label><br>
+            <label for="lastName">Last Name:</label><br>
             <input class="requried" type="text" id="last-name" name="lastName" required>
             <br><br>
-            <label for="mail">Mail:<span class="bonus-info">(required)</span></label>
-            <input class="requried" type="email" id="mail" name="mail" required >
+            <label for="mail">Mail:</span></label>
+            <input class="requried" type="email" id="mail" name="mail" required>
             <br><br>
-            <label for="password">Password: <span class="bonus-info">(required)</span></label>
+            <label for="password">Password:</span></label>
             <input class="requried" type="password" id="password" name="password">
             <img id="eye" src="images/eye.png" />
             <img id="eye2" src="images/eye2.png" />
             <br><br>
-            <label for="company">Company:</label>
+            <label for="company">Company: <span class="bonus-info">(optional)</label>
             <input type="text" id="company" name="company">
             <br><br>
-            <label for="countires">Country:</label>
+            <label for="countires">Country: <span class="bonus-info">(optional)</label>
             <select class="country-select" id="countries" name="countries">
               <option value=""></option>
               <option value="AF">Afghanistan</option>
@@ -306,7 +314,7 @@
         <form id="sign-up-p2">
           <fieldset>
             <legend class="register-header">Create account</legend>
-            <label for="jobRole">Job role - <span class="bonus-info">(multiple choices allowed)</span>:</label><br>
+            <label for="jobRole">Job role: <span class="bonus-info">(optional - multiple choices allowed)</span>:</label><br>
             <select class="basic-multiple" id="job-role" style="width: 92%" name="jobRole" multiple="multiple">
               <option value="installer">Installer</option>
               <option value="facilityManager">Facility Manager</option>
@@ -320,7 +328,7 @@
               <option value="technicalDirector">Technical Director</option>
               <option value="other">Other</option>
             </select>
-            <label for="interests">Areas of interests - <span class="bonus-info">(multiple choices allowed)</span>:</label><br>
+            <label for="interests">Areas of interests: <span class="bonus-info">(optional - multiple choices allowed)</span>:</label><br>
             <select class="basic-multiple" id="interests" style="width: 92%" name="interests" multiple="multiple">
               <option value="familyHomes">Family homes</option>
               <option value="commercialBuliding">Commercial building</option>
@@ -349,14 +357,21 @@
         <p>
           Privacy Notice regarding Grundfos’ marketing services
           What personal data is collected, for what purpose(s) and on what legal premise?
-          Grundfos will collect the personal data provided by you when signing up for Grundfos marketing services, this can include your first and last name, your email address, your telephone number, your country, your company, related company information, your area of interest and your job role (hereinafter the “Personal Data”).
-          Grundfos will use the Personal Data for the purposes of delivering the requested marketing services to you and to provide you with a personalised experience, information and marketing messages relevant to you via email, SMS, phone, push notifications or letter relating to Grundfos news, tools, applications, products events and promotions.
-          In order for Grundfos to fulfil the above-mentioned activities, Grundfos will store your Personal Data, analyse your behaviour and create a profile based on your actions on the different Grundfos websites, applications or tools, you have access to, including where you have created a Grundfos Account or filled in a form.<br><br>
-          To analyse your behaviour Grundfos is using an Adobe Experience Cloud Visitor ID to identify visitors and their interests on the Grundfos websites via cookies. Please, read our cookie policy for more information on Grundfos’ usage of cookies. Additionally, if you have a Grundfos Account, you will get a Public User ID that will be picked up and saved, for each page you have viewed, when you are logged in. Your Adobe Experience Cloud ID or your Public User ID is combined with your email address and from these ID’s Grundfos may utilise additional customer attributes to streamline marketing information that is more relevant to you.<br><br>
+          Grundfos will collect the personal data provided by you when signing up for Grundfos marketing services, this can include your first and last name, your email address, your telephone number, your country, your company, related company
+          information, your area of interest and your job role (hereinafter the “Personal Data”).
+          Grundfos will use the Personal Data for the purposes of delivering the requested marketing services to you and to provide you with a personalised experience, information and marketing messages relevant to you via email, SMS, phone, push
+          notifications or letter relating to Grundfos news, tools, applications, products events and promotions.
+          In order for Grundfos to fulfil the above-mentioned activities, Grundfos will store your Personal Data, analyse your behaviour and create a profile based on your actions on the different Grundfos websites, applications or tools, you have
+          access to, including where you have created a Grundfos Account or filled in a form.<br><br>
+          To analyse your behaviour Grundfos is using an Adobe Experience Cloud Visitor ID to identify visitors and their interests on the Grundfos websites via cookies. Please, read our cookie policy for more information on Grundfos’ usage of
+          cookies. Additionally, if you have a Grundfos Account, you will get a Public User ID that will be picked up and saved, for each page you have viewed, when you are logged in. Your Adobe Experience Cloud ID or your Public User ID is combined
+          with your email address and from these ID’s Grundfos may utilise additional customer attributes to streamline marketing information that is more relevant to you.<br><br>
           The legal basis for the processing of your Personal Data for newsletter mailings is your consent (Article 6, para. 1, lit. a of the General Data Protection Regulation (Regulation (EU) 2016/679) (“GDPR”).<br><br>
-          Your Personal Data may only be processed for different purposes if this is needed to comply with legal or regulatory obligations (e.g. relating to court proceedings or criminal prosecution authorities), where you have consented to the respective processing or if the processing is otherwise lawful under applicable law. If processing is for any different purpose we may provide you with additional information.
+          Your Personal Data may only be processed for different purposes if this is needed to comply with legal or regulatory obligations (e.g. relating to court proceedings or criminal prosecution authorities), where you have consented to the
+          respective processing or if the processing is otherwise lawful under applicable law. If processing is for any different purpose we may provide you with additional information.
           You are not obliged to provide your consent to receive marketing services and therefore the related processing of your personal data. If you do not provide your consent, you will not be able to access any such services.<br><br>
-          Details relating to the data controller and recipients of the personal data <br><br>Grundfos Holding A/S, Poul Due Jensens Vej 7, 8850 Bjerringbro, Denmark and Grundfos Pumps Ltd., Grovebury Road, Leighton Buzzard, Beds LU7 4TL, UK (together “Grundfos”) are joint data controllers of your Personal Data and responsible for data security and the processing of the data according to the specific purposes as previously mentioned.
+          Details relating to the data controller and recipients of the personal data <br><br>Grundfos Holding A/S, Poul Due Jensens Vej 7, 8850 Bjerringbro, Denmark and Grundfos Pumps Ltd., Grovebury Road, Leighton Buzzard, Beds LU7 4TL, UK
+          (together “Grundfos”) are joint data controllers of your Personal Data and responsible for data security and the processing of the data according to the specific purposes as previously mentioned.
           Grundfos can share your Personal Data with third party parties who will act as Grundfos’ data processors for processing your Personal Data according to the purposes mentioned above. The following data processors are used:
           - Adobe Systems Software Ireland Limited 4-6 Riverwalk, City West Business Campus, Dublin 24, Ireland: System used by Grundfos for storage of all your profile data and for personalising and sending out marketing material.
           - Microsoft Ireland Operations Limited, Atrium Building Block B Carmenhall Road Sandyford Industrial Estate Dublin 18, Ireland: System used by Grundfos for analysing your behaviour (big data analysis).
