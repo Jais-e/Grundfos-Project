@@ -3,21 +3,7 @@
 $(document).ready(function() {
   $('.basic-multiple').select2();
 });
-let progresCounter = 0;
-// Javasript
 
-function progress(){
-  let element1 = document.querySelector('#first-name').value;
-  let element2 = document.querySelector('#last-name').value;
-  let element3 = document.querySelector('#password').value;
-  let element4 = document.querySelector('#mail').value;
-    if (element1 != "" || element2 != ""){
-      progresCounter ++;
-      console.log(progresCounter);
-    }
-
-};
-progress()
 document.querySelector('#sign-up').oninput = function(){
   let req1 = document.querySelector('#first-name').value;
   let req2 = document.querySelector('#last-name').value;
@@ -114,6 +100,7 @@ function createAccount() {
   };
   users.push(newAccount);
   console.log(users);
+  newDoc();
 }
   // If checbox is unchecked
   else{
@@ -121,7 +108,9 @@ function createAccount() {
 }
 
 };
-
+function newDoc() {
+  window.location.assign("https://xd.adobe.com/view/2a7a43c6-984d-45cf-4a83-18343a645b8d-5c4b/?fullscreen")
+}
 
 
 /*function validateEmail(email) {

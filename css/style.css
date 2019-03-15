@@ -17,7 +17,6 @@ body {
   padding: 0;
   border: none;
   font-family: GrundfosFont;
-
   background: url('../images/background-img.jpg') no-repeat;
   background-size: cover;
 }
@@ -36,10 +35,17 @@ h3{
   margin: 0;
   padding: 0;
 }
-header img{
+
+/* Header styles */
+.header-main {
+  width: 100%;
+  margin: -3px auto;
+}
+.signup-header img{
   width: 100%;
   margin-bottom: 2%;
 }
+
 /* Page elements */
 .wrapper {
   width: 80%;
@@ -50,9 +56,9 @@ header img{
   height: auto;
   display: flex;
 }
-
 .side-text{
   flex-basis: 30%;
+  min-width: 360px;
   float: left;
   color: #4F799E;
 }
@@ -75,6 +81,7 @@ header img{
   opacity: 0;
   transition: all 0.5s;
 }
+
 /* Form styling */
 .sign-up-form{
   flex-basis: 70%;
@@ -82,6 +89,7 @@ header img{
 #sign-up, #sign-up-p2 {
   width: 50%;
   min-width: 360px;
+  max-width: 460px;
   height: auto;
   margin: 5% auto;
   background-color: white;
@@ -138,7 +146,6 @@ option {
   font-size: 1.1em;
   color: #4F799E;
 }
-
 #password {
   width: 80%;
   float: left;
@@ -245,14 +252,14 @@ option {
 
 #speechBuble {
     position: absolute;
-    margin-left: 770px; 
+    margin-left: 770px;
     margin-top: 90px;
 }
 
 #textButton {
     color: white;
     position:absolute;
-    margin-left: 760px; 
+    margin-left: 760px;
     margin-top: 85px;
 }
 
@@ -285,4 +292,14 @@ option {
 }
 
 
+@media only screen and (max-width: 480px){
 
+  .sign-up-page{
+    display: block;
+    margin-left: -12.5%;
+  }
+  .side-text{
+    display: none;
+  }
+
+}
