@@ -256,7 +256,7 @@ option {
   color: white;
   border-radius:15px;
   overflow: hidden;
-  border: 2px solid #4aa22c;
+  filter: drop-shadow(5px 5px 5px grey);
   transition: all 1s;
 }
 .close{
