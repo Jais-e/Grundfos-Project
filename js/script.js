@@ -7,9 +7,7 @@ $(document).ready(function() {
 function slideUp(){
   document.querySelector('.popup-nudge').style.bottom = "5%";
 };
-document.querySelector('.create').addEventListener('click', function(){
-newDoc2();
-});
+
 document.querySelector('#sign-up').oninput = function(){
   let req1 = document.querySelector('#first-name').value;
   let req2 = document.querySelector('#last-name').value;
@@ -118,7 +116,7 @@ function newDoc() {
   window.location.assign("https://xd.adobe.com/view/2a7a43c6-984d-45cf-4a83-18343a645b8d-5c4b/?fullscreen")
 }
 function newDoc2() {
-  window.location.assign("https://jais-e.dk/grundfos/login.html")
+  window.location.assign("http://jais-e.dk/grundfos/login.html")
 }
 
 /*function validateEmail(email) {
