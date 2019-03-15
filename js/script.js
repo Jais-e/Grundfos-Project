@@ -100,6 +100,7 @@ function createAccount() {
   };
   users.push(newAccount);
   console.log(users);
+  newDoc();
 }
   // If checbox is unchecked
   else{
@@ -107,7 +108,9 @@ function createAccount() {
 }
 
 };
-
+function newDoc() {
+  window.location.assign("https://xd.adobe.com/view/2a7a43c6-984d-45cf-4a83-18343a645b8d-5c4b/?fullscreen")
+}
 
 
 /*function validateEmail(email) {
