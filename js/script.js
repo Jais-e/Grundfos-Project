@@ -3,7 +3,8 @@
 $(document).ready(function() {
   $('.basic-multiple').select2();
 });
-// Popup-nudge slide up when page loads
+
+// Popup-nudge slide up when page loads - !! DEACTIVATED !!
 /*function slideUp(){
   document.querySelector('.popup-nudge').style.bottom = "5%";
 };*/
