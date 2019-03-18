@@ -4,9 +4,9 @@ $(document).ready(function() {
   $('.basic-multiple').select2();
 });
 // Popup-nudge slide up when page loads
-function slideUp(){
+/*function slideUp(){
   document.querySelector('.popup-nudge').style.bottom = "5%";
-};
+};*/
 
 document.querySelector('#sign-up').oninput = function(){
   let req1 = document.querySelector('#first-name').value;
