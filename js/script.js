@@ -27,14 +27,11 @@ document.querySelector('#next-page').addEventListener("click", function() {
   let req2 = document.querySelector('#last-name').value;
   let req3 = document.querySelector('#password').value;
   let req4 = document.querySelector('#mail').value;
-
-
   if (req1 === "" || req2 === "" || req3 === "" || req4 === "") {
     alert('Please fill in all requried fields');
   } else {
     document.querySelector("#sign-up").style.display = "none";
     document.querySelector("#sign-up-p2").style.display = "block";
-
   }
 });
 document.querySelector('#back').addEventListener("click", function() {
@@ -114,10 +111,10 @@ function createAccount() {
 
 };
 function newDoc() {
-  window.location.assign("https://xd.adobe.com/view/2a7a43c6-984d-45cf-4a83-18343a645b8d-5c4b/?fullscreen")
+  window.location.assign("https://xd.adobe.com/view/739ed267-4b26-492b-6f8b-2b8d8afad5b9-05af/?fbclid=IwAR2dprFDiIEHGOF1lmxCrH9AprOgYvCG049UoJagFR8ddMFakjSpce43VUI&fullscreen");
 }
 function newDoc2() {
-  window.location.assign("http://jais-e.dk/grundfos/login.html")
+  window.location.assign("http://jais-e.dk/grundfos/login.html");
 }
 
 /*function validateEmail(email) {
